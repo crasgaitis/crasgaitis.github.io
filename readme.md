@@ -1,4 +1,6 @@
 ### Todos:
+* favicon
+* custom scrollbar
 * add more images
 * replace media section with flexbox image collage
 * contact section
