@@ -1,6 +1,6 @@
 ### Todos:
 * add more images
-* replace media section with flexbox image collage
+* mouseover captions on media collage
 * contact section
 * mouse trail
 * add collapsable sections

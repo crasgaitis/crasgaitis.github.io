@@ -297,17 +297,17 @@
 
   .curved-box {
     width: 100%;
-    background: linear-gradient(#2d4f1a, transparent);
+    background: linear-gradient(transparent, #2d4f1a);
     border-radius: 20px;
     position: relative;
-    margin-top: 30px
+    margin-top: 30px;
+    text-align: center;
 }
 
  .curved-box > .content {
     text-align: center;
     color: white;
     border: none;
-    padding: 20px
 }
 
 #socials{
@@ -439,3 +439,71 @@
     margin-left: 10%;
     color: white
   }
+
+  .club-container img{
+    margin: 0;
+    display:block;
+    padding: 0;
+    max-width: 400px
+  }
+
+  .collapsible {
+    display: none;
+    opacity: 1;
+    transition: opacity 2.5s ease;
+    color: white
+}
+
+.collapsible.active {
+    display: block;
+    opacity: 0;
+    color: white
+}
+
+
+.collage_row {
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+
+.collage_column {
+  box-sizing: border-box;
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+.collage_column img {
+  box-sizing: border-box;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 300px
+}
+
+@media screen and (max-width: 800px) {
+  .collage_column {
+    box-sizing: border-box;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .collage_column {
+    box-sizing: border-box;
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}

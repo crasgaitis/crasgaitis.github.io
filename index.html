@@ -9,6 +9,8 @@
   <title>Catherine Rasgaitis</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="favicon" type="image/x-icon" href="artificial-intelligence.ico">
+  <!-- <a href="https://www.flaticon.com/free-icons/brain" title="brain icons">Brain icons created by Freepik - Flaticon</a> -->
 </head>
 
 <body>
@@ -32,11 +34,33 @@
       <p>Hey there! My name is Catherine and I am a Computer Science major at the University of Washington, Seattle.
         My primary area of interest is artificial intelligence, although I'm also enthusiastic about neuroscience and space science!
         I previously worked on applied reinforcement learning at NASA JPL, and I'm currently working on some other cool projects at UW's Orsborn Lab and Behavioral Ecophysics Lab. </p>
-        <p>In my free time, I also enjoy participating in hackathons, making short films, and writing! </p>
+      <p>In my free time, I also enjoy participating in hackathons, making short films, and writing! </p>
     </div>
   </main>
 
-  <div class="curved-box">
+  <div class = 'curved-box'>
+
+    <h2>Some recent adventures...</h2>
+
+    <div class="collage_row"> 
+      <div class="collage_column">
+        <img src="static/1.png" style="width:100%">
+        <img src="static/4.png" style="width:100%">
+      </div>
+      <div class="collage_column">
+        <img src="static/5.png" style="width:100%">
+        <img src="static/2.png" style="width:100%">
+      </div>  
+      <div class="collage_column">
+        <img src="static/3.png" style="width:100%">
+        <img src="static/6.png" style="width:100%">
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- <div class="curved-box">
     <div class="content">
         <h1>Media</h1>
         <div class="slideshow-container">
@@ -69,7 +93,7 @@
             <span class="dot"></span> 
             <span class="dot"></span> 
             <span class="dot"></span> 
-          </div>
+          </div> -->
 
         <!-- <div id = "socials">
         <img src = "static/discord.png"> <img src = "static/linkedin.png" style = "width: 65px"> <img src = "static/instagram.png" style = "width: 70px"> <img src = "static/mail.png">
@@ -140,9 +164,9 @@
           </div>
         </li>
         </div>
-
-
   </div>
+
+  <br/>
 
   <div class="title">
     <hr size="1"><br>
@@ -169,9 +193,11 @@
     <p>Synaptech also runs quarter and year-long projects that anyone can join. I'm a part of the SmartMusic project, where we're working to generate original music 
       compositions from a user's neural feedback! </p>
     </p>
+
+    <!-- <img src = "static/cnt.JPG"> -->
   </div>
 
-  <div class = 'club-container'>
+  <div class = 'club-container' style = 'margin-bottom: 20px'>
     <h4>LUX Film Production Club </h4>
     <p>A film-making club! In addition to weekly meetings (usually technical in nature), I get the opportunity to join a crew and produce a new short film every quarter!
       So far, I've been involved in three productions with experience as a director, screenwriter, camera operator, and gaffer. My favorite genre is psychological  horror. 
@@ -254,6 +280,17 @@
     <p>Volunteering club.</p>
   </div>
 
+  <br>
+
+  <!--idk why i have to put this here but it's somehow preventing the hr lines from going wonky lol-->
+  <div class="title"> 
+    <h2 style = "font-size: 2px; color: transparent">HACKATHONS </h2>
+  </div>
+
+  <div class="title">
+    <hr size="1"><br>
+    <h2>HACKATHONS </h2>
+  </div>
 
   <!-- <div class="news" id="news"></div>
   <div class="loader" id="loader"><a href="#" id="readmore">load more...</a></div>
@@ -261,59 +298,127 @@
     <hr size="1">
   </div> -->
 
-<script>
-  var slideIndex = 1;
-  var autoAdvance;
+  <button id="toggleSection1">Toggle Section 1</button>
+  <div class="collapsible" id="section1">
+      <h2>Section 1</h2>
+      <p>Content for section 1.</p>
+  </div>
 
-  showSlides(slideIndex);
+  <button id="toggleSection2">Toggle Section 2</button>
+  <div class="collapsible" id="section2">
+      <h2>Section 2</h2>
+      <p>Content for section 2.</p>
+  </div>
 
-  // advance to the next slide automatically
-  function autoNextSlide() {
-    showSlides(slideIndex += 1);
+  <script>
+    var slideIndex = 1;
+var autoAdvance;
+
+showSlides(slideIndex);
+
+// advance to the next slide automatically
+function autoNextSlide() {
+  showSlides(slideIndex += 1);
+}
+
+// show specific slide
+function currentSlide(n) {
+  clearTimeout(autoAdvance); // reset the timer when user interacts with dots or slides
+  showSlides(slideIndex = n); // update the slide index
+
+  autoAdvance = setTimeout(autoNextSlide, 3000);
+}
+
+// display slides
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
   }
 
-  // show specific slide
-  function currentSlide(n) {
-    clearTimeout(autoAdvance); // reset the timer when user interacts with dots or slides
-    showSlides(slideIndex = n); // update the slide index
-
-    autoAdvance = setTimeout(autoNextSlide, 3000);
+  // hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
 
-  // display slides
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-
-    // hide all slides
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    // remove the 'active' class from all dots
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    // show the current slide and set the corresponding dot as 'active'
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-
-    // auto advance to the next slide after 3 seconds (3000 milliseconds)
-    autoAdvance = setTimeout(autoNextSlide, 3000);
+  // remove the 'active' class from all dots
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
 
-  autoNextSlide();
-</script>
+  // show the current slide and set the corresponding dot as 'active'
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 
+  // auto advance to the next slide after 3 seconds (3000 milliseconds)
+  autoAdvance = setTimeout(autoNextSlide, 3000);
+}
+
+autoNextSlide();
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to toggle the visibility of a specific collapsible section
+  function toggleCollapsible(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+          section.style.display = section.style.display === "none" ? "block" : "none";
+      }
+  }
+
+  // Add click event listeners to the buttons
+  const toggleSection1Button = document.getElementById("toggleSection1");
+  if (toggleSection1Button) {
+      toggleSection1Button.addEventListener("click", function () {
+          toggleCollapsible("section1");
+      });
+  }
+
+  const toggleSection2Button = document.getElementById("toggleSection2");
+  if (toggleSection2Button) {
+      toggleSection2Button.addEventListener("click", function () {
+          toggleCollapsible("section2");
+      });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the buttons and collapsible sections
+  const toggleSection1Button = document.getElementById("toggleSection1");
+  const toggleSection2Button = document.getElementById("toggleSection2");
+  const section1 = document.getElementById("section1");
+  const section2 = document.getElementById("section2");
+
+  // Function to toggle the visibility of a specific section
+  function toggleSection(section) {
+      if (section.style.display === "none") {
+          section.classList.add("active"); // Add the "active" class for fade-in
+      } else {
+          section.classList.remove("active"); // Remove the "active" class for fade-out
+      }
+  }
+
+  // Add click event listeners to the buttons
+  toggleSection1Button.addEventListener("click", function () {
+      toggleSection(section1);
+  });
+
+  toggleSection2Button.addEventListener("click", function () {
+      toggleSection(section2);
+  });
+});
+
+
+
+  </script>
 
 </body>
 </html>
