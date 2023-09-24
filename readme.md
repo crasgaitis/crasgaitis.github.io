@@ -1,4 +1,6 @@
 ### Todos:
+* favicon
+* custom scrollbar
 * add more images
 * mouseover captions on media collage
 * contact section
