@@ -576,7 +576,7 @@ a:hover{
   text-decoration-style: wavy;
 }
 
-#browse{
+.browse{
   margin-top: 40px
 }
 
@@ -629,4 +629,34 @@ a:hover{
 
 .fancy-list-item h5{
   font-size: 20px
+}
+
+.film {
+  display: flex;
+  justify-content: center;
+  width: 120%;
+  margin-left: -10%; 
+  float: clear
+}
+.film-item {
+  flex: 1;
+  background-color: #1f262c;
+  margin: 15px 8px;
+  padding: 30px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.film-item p {
+  padding: 0;
+  margin: 0;
+  font-size: 15px
+}
+
+.film-item p em{
+  font-size: 13px;
+}
+
+.film-item > p:not(:has(em)) {
+  margin-top: 9px;
 }
