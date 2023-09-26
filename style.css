@@ -579,3 +579,27 @@ a:hover{
 #browse{
   margin-top: 40px
 }
+
+/* hackathon */
+.hackathon-item {
+  margin-top: 15px;
+  position: relative;
+  clear: both;
+  width: 100%;
+  background-color: #d9ffdede;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  float: left;
+  color: black
+}
+
+.hackathon-item h5{
+  font-size: 18px
+}
+
+.hackathon-item p{
+  font-size: 16px;
+  padding-bottom: 0;
+  margin-bottom: 0
+}
