@@ -603,3 +603,30 @@ a:hover{
   padding-bottom: 0;
   margin-bottom: 0
 }
+
+.fancy-list { padding-left: 50px; }
+.fancy-list-item { 
+  color: white;
+  margin-top: 24px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 20px;
+  
+  &:before {
+    content: '';
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    position: absolute; 
+    top: -7px;
+    left: -46px;
+    margin-left:13px
+  }
+}
+
+.fancy-list-item h5{
+  font-size: 20px
+}

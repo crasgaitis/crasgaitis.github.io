@@ -6,4 +6,4 @@
 * contact section
 * mouse trail
 * add collapsable sections
-* more content: hackathons, film portfolio, blog, rap lol
+* more content: PERSONAL PROJECTS, film portfolio, blog, rap lol
