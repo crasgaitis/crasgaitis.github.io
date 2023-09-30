@@ -10,7 +10,7 @@
   <title>Catherine Rasgaitis</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link rel="favicon" type="image/x-icon" href="artificial-intelligence.ico">
+  <link rel="icon" href="./artificial-intelligence.ico?v=2">
   
   <!-- <a href="https://www.flaticon.com/free-icons/brain" title="brain icons">Brain icons created by Freepik - Flaticon</a> -->
 </head>
@@ -35,7 +35,7 @@
     <div class="intro"><a style="clear:right;float:right;margin-bottom:3px;margin-left:1px"><img src="https://cdn.discordapp.com/attachments/1021852632844881932/1117670454887465010/IMG-20230609-WA0003_2.jpg" width="210"></a>
       <p>Hey there! My name is Catherine and I am a Computer Science major at the University of Washington, Seattle.
         My primary area of interest is artificial intelligence, although I'm also enthusiastic about neuroscience and space science!
-        I previously worked on applied reinforcement learning at NASA JPL, and I'm currently working on some other cool projects at UW's Orsborn Lab and Behavioral Ecophysics Lab. </p>
+        I previously worked on applied reinforcement learning at NASA JPL, and I'm currently working on some other cool projects at UW's Orsborn Lab and Behavioral Ecophysics Lab. Currently looking for a <span class = "yellow">summer 2024 AI internship</span>!</p>
       <p>In my free time, I also enjoy participating in hackathons, making short films, and writing! </p>
     </div>
   </main>
@@ -190,6 +190,8 @@
     <h2>EDUCATION </h2>
   </div>
 
+  <img src = "static/allen.jpg" id = "allen">
+
   <div class = "edu-item">
     <h3>University of Washington</h3>
     <p>BS in Computer Science | GPA: 3.7 | 2022 - 2025 </p>
@@ -203,11 +205,12 @@
   </div>
 
   <div class = 'club-container'>
+    <img src="static/brain.png" alt="brain image" class="centered-image">
     <h4>Synaptech &#8226; President </h4>
-    <p>A neurotechnology & neuroengineering club! I put together weekly meetings, usually centered around a project tutorial I created. We work with lots of hardware,
+    <p>A <span class = "yellow">neurotechnology & neuroengineering club</span>! I put together weekly meetings, usually centered around a project tutorial I created. We work with lots of hardware,
       from Arduino kits, electroencephalograms, TENS devices, etc. Sometimes I also host journal-club style meetings, hackathons, or bring in guest speakers! </p>
 
-    <p>Synaptech also runs quarter and year-long projects that anyone can join. I'm a part of the SmartMusic project, where we're working to generate original music 
+    <p>Synaptech also runs <span class = "yellow">quarter and year-long projects</span> that anyone can join. I'm a part of the SmartMusic project, where we're working to generate original music 
       compositions from a user's neural feedback! </p>
     </p>
 
@@ -215,37 +218,44 @@
   </div>
 
   <div class = 'club-container' style = 'margin-bottom: 20px'>
+    <img src="static/camera.png" alt="camera image" class="centered-image">
     <h4>LUX Film Production Club </h4>
-    <p>A film-making club! In addition to weekly meetings (usually technical in nature), I get the opportunity to join a crew and produce a new short film every quarter!
+    <p>A <span class = "yellow">film-making club</span>! In addition to weekly meetings (usually technical in nature), I get the opportunity to join a crew and produce a <span class = "yellow">new short film every quarter</span>!
       So far, I've been involved in three productions with experience as a director, screenwriter, camera operator, and gaffer. My favorite genre is psychological  horror. 
-      Here's my <a href = "">film portfolio </a>.
+      Here's my <a href = "#gotofilm">film portfolio </a>.
     </p>
     </p>
   </div>
 
   <div class = 'club-container'>
+    <img src="static/planet.png" alt="planet image" class="centered-image">
     <h4>SPACE </h4>
-    <p>SPACE (Scholars Pursuing Academic and Celestial Exploration) is a space science club! Most recipients of the WA NASA Space Grant, including myself, are involved with
+    <p>SPACE (Scholars Pursuing Academic and Celestial Exploration) is a <span class = "yellow">space science</span> club! Most recipients of the WA NASA Space Grant, including myself, are involved with
       SPACE. One of my favorite events with SPACE was having a live Q&A with an astronaut on the ISS.
     </p>
     </p>
   </div>
 
   <div class = 'club-container'>
+    <img src="static/lightbulb.png" alt="lightbulb image" class="centered-image">
     <h4>Interactive Intelligence </h4>
-    <p>Interactive Intelligence (or I&sup2; for short) takes an approach of building artificial intelligence that mimics the brain as closely as possible. I used to be a 
+    <p>Interactive Intelligence (or I&sup2; for short) takes an approach of building <span class = "yellow">artificial intelligence that mimics the brain</span> as closely as possible. I used to be a 
       part of one of their student-led courses, but now I just drop in for journal club meetings to stay on top of AI news!
     </p>
     </p>
   </div>
 
   <div class = 'club-container'>
+    <img src="static/friendship.png" alt="friendship image" class="centered-image">
     <h4>Computing Community </h4>
-    <p>Computing Community (or COM&sup2; for short) is the largest CSE-related club on campus. I was previously a Little in the COM&sup2; Big-Little mentorship program and
+    <p>Computing Community (or COM&sup2; for short) is the largest <span class = "yellow">CSE-related club</span> on campus. I was previously a Little in the COM&sup2; Big-Little <span class = "yellow">mentorship</span> program and
       hope to pay it forward as a Big in the future!
     </p>
     </p>
   </div>
+
+  <button id="toggleSection2">Toggle more education history</button>
+  <div class="collapsible" id="section2">
 
   <div class = "edu-item">
     <h3>Highline College</h3>
@@ -258,11 +268,13 @@
   </div>
 
   <div class = 'club-container'>
+    <img src="static/binary.png" alt="binary image" class="centered-image" style = "max-width: 8%">
     <h4>Computer Science Club </h4>
     <p>I attended a few hackathons and helped host Highline's first CS club hackathon with Stadium High School's Girls Who Code Club! I also prepared a workshop on creating art with Java for Highline's Spring Hacks hackathon.</p>
   </div>
 
   <div class = 'club-container'>
+    <img src="static/cyber-security.png" alt="cyber-security image" class="centered-image" style = "max-width: 8%">
     <h4>Cyber Competition Club </h4>
     <p>I competed in the NCAE Cyber Games and learned about white-hat hacking through online training and weekly meetings.</p>
   </div>
@@ -278,25 +290,29 @@
   </div>
 
   <div class = 'club-container'>
+    <img src="static/woman.png" alt="woman image" class="centered-image">
     <h4>Girls Who Code Club  &#8226; Founder & President</h4>
     <p>Led weekly meetings and group projects. Examples of projects included games, website building, and AR/VR apps. I also hosted hackathons and coordinated guest speaker events with industry professionals.</p>
   </div>
 
   <div class = 'club-container'>
+    <img src="static/math.png" alt="math image" class="centered-image">
     <h4>Math Club  &#8226; Vice President</h4>
     <p>Competed in math competitions and worked on logic/math puzzles during weekly meetings.</p>
   </div>
 
   <div class = 'club-container'>
+    <img src="static/key.png" alt="key image" class="centered-image" style = "width: 8%">
     <h4>Key Club  &#8226; Secretary </h4>
     <p>Volunteering club. Helped fundraise for the Thirst Project. Took meeting notes and kept track of students' volunteering hours.</p>
   </div>
 
   <div class = 'club-container'>
+    <img src="static/help.png" alt="help image" class="centered-image" style = "width: 8%">
     <h4>National Honor Society</h4>
     <p>Volunteering club.</p>
   </div>
-
+</div> 
   <br>
 
   <!--idk why i have to put this here but it's somehow preventing the hr lines from going wonky lol-->
@@ -336,6 +352,11 @@
     <h5>CorAL (Confused or Actually Learning) &#8226; NeuroTEC Hackathon &#8226; Feb 2023</h5>
     <p> Built a dataset by having a subject wear an EEG device and watch videos in various languages, half of which the subject was fluent in. Then, trained a model to detect the subject's understanding, and connected it to an app. Using Arduino, a light turns on when the subject is confused. Could be used in classrooms, for teachers to check students' understanding based on neural feedback. Won Best in Technological Innovation.</p>
   </div>
+
+  <p style = "color: transparent; font-size: 3px">.</p>
+
+  <button id="toggleSection1" style = "margin-top: 0px">Toggle more hackathons</button>
+  <div class="collapsible" id="section1">
 
   <div class = "hackathon-item">
     <h5>Pocket Plots &#8226; TreeHacks &#8226; Feb 2023</h5>
@@ -627,6 +648,7 @@
     <h5> School Tools &#8226;  Taro Hacks &#8226; Aug 2020</h5>
     <p> A website to provide and connect students with online learning resources, fun activities, and organizational tools while they stay at home in the COVID-19 pandemic. This was my first ever hackathon and will always have a special place in my heart! </p>
   </div>
+  </div>
 
    <!--idk why i have to put this here but it's somehow preventing the hr lines from going wonky lol-->
    <div class="title"> 
@@ -657,25 +679,30 @@
     </li>
     </ol>
 
-  <div class="title">
+  <div class="title" id = "gotofilm">
     <hr size="1"><br>
     <h2>FILM PORTFOLIO </h2>
   </div>
+
+  <p>Here are some of the short films that I've worked on! My favorite genre is horror, more psychological than gore-y stuff though. I really enjoy watching interrogation videos on YouTube and my favorite shows are Criminal Minds and The X-Files. Also a big fan of Agents of SHIELD! </p>
   
   <div class = "film">
     <div class = "film-item">
+      <a href = "https://www.youtube.com/watch?v=8eN-Gp-6DBY"><img class = "film-thumbnail" src = "static/usecase.jpg"></a>
       <h4>Use Case </h4>
       <p><em> Drama  &#8226; Au 2022</em></p>
       <p><em>Camera Operator</em></p>
       <p>Although she seems happy to help her friends, Taylor is crumbling under her belief that her friendships are merely transactional relationships. </p>
     </div>
     <div class = "film-item">
+      <a href = "https://www.youtube.com/watch?v=ZgvjK5Unke0"><img class = "film-thumbnail" src = "static/paranoia.jpg"></a>
       <h4>Paranoia </h4>
       <p><em> Psychological Horror  &#8226; Wi 2023</em></p>
       <p><em>Director, Screenwriter</em></p>
       <p>A woman becomes increasingly convinced that she is being followed, but her therapist dismisses her claims, concealing his own stalkerish habits. </p>
     </div>
     <div class = "film-item">
+      <a href = "https://www.youtube.com/watch?v=Y27f5JN2T5M"><img class = "film-thumbnail" src = "static/space.jpg"></a>
       <h4>From the Depths of Space </h4>
       <p><em> Horror, Supernatural  &#8226; Sp 2023</em></p>
       <p><em>Gaffer</em></p>
@@ -700,22 +727,45 @@
 
   <h4 class = 'browse'>Browse my recent articles...</h4>
 
+  <div id="retainable-rss-embed" data-rss="https://medium.com/feed/retainable,https://medium.com/feed/@crasgaitis"
+  data-maxcols="3" 
+  data-layout="slider" 
+  data-poststyle="external" 
+  data-readmore="Read the rest" 
+  data-buttonclass="btn btn-primary" 
+  data-offset="-100">
 
+  </div>
 
-  <div class="title">
+  <!-- <div class="title">
     <hr size="1"><br>
     <h2>MUSIC </h2>
   </div>
 
-  <p>It surprises some folks, but I also like to rap! I'm a huge fan of puns, wordplay, and that kinda thing, so I find rapping really fun!</p>
+  <p>It surprises some folks, but I also like to rap! I'm a huge fan of puns, wordplay, and that kinda thing, so I find rapping really fun!</p> -->
 
+
+  <div class="title" style = "margin: 0 auto">
+    <hr size="1"><br>
+    <h2>CONTACT</h2>
+  </div>
+
+  <p>Definitely feel free to <a href="mailto:catraz@live.com" style = "text-decoration: none">contact me</a>! I'm always looking to collaborate on hackathons, films, or other projects. I'm also on the lookout for a <span class = "yellow">summer 2024 AI internship</span>!</p>
+
+  <br/>
+
+  <div id = "contact-sect">
+    <p>made with 💚 by catherine</p>
+    <p>253 993 9270 &#8226; <a href="mailto:catraz@live.com" style = "text-decoration: none">catraz@live.com</a></p>
+    
+  </div>
 
 
   <br/><br/>
 
-  <h1> THIS SITE IS NOT FINISHED YET LOLOLOL</h1>
+  <!-- <h1> THIS SITE IS NOT FINISHED YET LOLOLOL</h1> -->
 
-  <br/><br/><br/><br/><br/>
+  <br/>
 
   <!-- <div class="news" id="news"></div>
   <div class="loader" id="loader"><a href="#" id="readmore">load more...</a></div>
@@ -723,126 +773,62 @@
     <hr size="1">
   </div> -->
 
-  <!-- <button id="toggleSection1">Toggle Section 1</button>
-  <div class="collapsible" id="section1">
-      <h2>Section 1</h2>
-      <p>Content for section 1.</p>
-  </div>
 
-  <button id="toggleSection2">Toggle Section 2</button>
-  <div class="collapsible" id="section2">
-      <h2>Section 2</h2>
-      <p>Content for section 2.</p>
-  </div> -->
+  <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 
   <script>
-    var slideIndex = 1;
-var autoAdvance;
-
-showSlides(slideIndex);
-
-// advance to the next slide automatically
-function autoNextSlide() {
-  showSlides(slideIndex += 1);
-}
-
-// show specific slide
-function currentSlide(n) {
-  clearTimeout(autoAdvance); // reset the timer when user interacts with dots or slides
-  showSlides(slideIndex = n); // update the slide index
-
-  autoAdvance = setTimeout(autoNextSlide, 3000);
-}
-
-// display slides
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  // hide all slides
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  // remove the 'active' class from all dots
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  // show the current slide and set the corresponding dot as 'active'
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-
-  // auto advance to the next slide after 3 seconds (3000 milliseconds)
-  autoAdvance = setTimeout(autoNextSlide, 3000);
-}
-
-autoNextSlide();
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Function to toggle the visibility of a specific collapsible section
-  function toggleCollapsible(sectionId) {
-      const section = document.getElementById(sectionId);
-      if (section) {
-          section.style.display = section.style.display === "none" ? "block" : "none";
+    document.addEventListener("DOMContentLoaded", function () {
+      // Function to toggle the visibility of a specific collapsible section
+      function toggleCollapsible(sectionId) {
+          const section = document.getElementById(sectionId);
+          if (section) {
+              section.style.display = section.style.display === "none" ? "block" : "none";
+          }
       }
-  }
-
-  // Add click event listeners to the buttons
-  const toggleSection1Button = document.getElementById("toggleSection1");
-  if (toggleSection1Button) {
+    
+      // Add click event listeners to the buttons
+      const toggleSection1Button = document.getElementById("toggleSection1");
+      if (toggleSection1Button) {
+          toggleSection1Button.addEventListener("click", function () {
+              toggleCollapsible("section1");
+          });
+      }
+    
+      const toggleSection2Button = document.getElementById("toggleSection2");
+      if (toggleSection2Button) {
+          toggleSection2Button.addEventListener("click", function () {
+              toggleCollapsible("section2");
+          });
+      }
+    });
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the buttons and collapsible sections
+      const toggleSection1Button = document.getElementById("toggleSection1");
+      const toggleSection2Button = document.getElementById("toggleSection2");
+      const section1 = document.getElementById("section1");
+      const section2 = document.getElementById("section2");
+    
+      // Function to toggle the visibility of a specific section
+      function toggleSection(section) {
+          if (section.style.display === "none") {
+              section.classList.add("active"); // Add the "active" class for fade-in
+          } else {
+              section.classList.remove("active"); // Remove the "active" class for fade-out
+          }
+      }
+    
+      // Add click event listeners to the buttons
       toggleSection1Button.addEventListener("click", function () {
-          toggleCollapsible("section1");
+          toggleSection(section1);
       });
-  }
-
-  const toggleSection2Button = document.getElementById("toggleSection2");
-  if (toggleSection2Button) {
+    
       toggleSection2Button.addEventListener("click", function () {
-          toggleCollapsible("section2");
+          toggleSection(section2);
       });
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Get the buttons and collapsible sections
-  const toggleSection1Button = document.getElementById("toggleSection1");
-  const toggleSection2Button = document.getElementById("toggleSection2");
-  const section1 = document.getElementById("section1");
-  const section2 = document.getElementById("section2");
-
-  // Function to toggle the visibility of a specific section
-  function toggleSection(section) {
-      if (section.style.display === "none") {
-          section.classList.add("active"); // Add the "active" class for fade-in
-      } else {
-          section.classList.remove("active"); // Remove the "active" class for fade-out
-      }
-  }
-
-  // Add click event listeners to the buttons
-  toggleSection1Button.addEventListener("click", function () {
-      toggleSection(section1);
-  });
-
-  toggleSection2Button.addEventListener("click", function () {
-      toggleSection(section2);
-  });
-});
-
-
-
+    });
+    
+    
   </script>
 
 </body>

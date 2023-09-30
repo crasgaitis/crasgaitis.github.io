@@ -660,3 +660,81 @@ a:hover{
 .film-item > p:not(:has(em)) {
   margin-top: 9px;
 }
+
+#contact-sect {
+  background: linear-gradient(transparent, #7cc59a50);
+  margin: 15px 8px;
+  padding: 30px;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center
+}
+
+#contact-sect p{
+  margin: 0 auto
+}
+
+.film-thumbnail{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+
+.post-image{
+  margin-bottom: 15px;
+  opacity: 0.8;
+  filter: sepia(90%) saturate(150%) brightness(80%) hue-rotate(80deg);
+}
+
+.post-image:hover{
+  opacity: 1;
+  filter: sepia(0%) saturate(110%) brightness(100%) hue-rotate(0deg);
+}
+
+[class="author mt-2"], [class="VueCarousel-pagination"], [class="read-more"], .post-date{
+  display: none
+}
+
+.post-title, .post-title:hover{
+  text-decoration: none; 
+}
+
+.post-title h2{
+  font-size: 20px !important;  
+  color:rgb(212, 237, 212)
+}
+
+#allen{
+  width: 100%;
+  max-height: 200px;
+  margin: 0 auto;
+  padding: 0;
+  object-fit: cover; 
+  overflow: hidden
+}
+
+.centered-image {
+  position: absolute;
+  left: -15%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100px;
+  width: 10%
+}
+
+
+[id^="toggleSection"] {
+  background-color: #5c6f80;
+  border: solid #5c6f80 5px;
+  display: block;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+[id^="toggleSection"]:hover{
+  background-color: #2f475c;
+  border: solid #162736 5px
+}
