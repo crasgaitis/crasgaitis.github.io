@@ -736,5 +736,6 @@ a:hover{
 
 [id^="toggleSection"]:hover{
   background-color: #2f475c;
-  border: solid #162736 5px
+  border: solid #162736 5px;
+  cursor: pointer
 }
