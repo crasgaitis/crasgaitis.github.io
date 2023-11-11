@@ -758,3 +758,56 @@ a:hover{
 ::-webkit-scrollbar-thumb:hover {
   background: #87a989;
 }
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: pink;
+  position: absolute;
+}
+
+
+#cursor-trail {
+  position: absolute;
+  pointer-events: none;
+}
+
+#cursor-trail .trail {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: pink;
+  animation: trail 0.5s ease-in-out infinite;
+  z-index: 500
+}
+
+@keyframes trail {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+#button_jumps{
+  text-decoration: none;
+  display: inline-block;
+  padding: 100px auto;
+  margin-bottom: 30px;
+  color: rgb(52, 77, 115);
+  background-color: rgb(170, 193, 201);
+  border-radius: 30px;
+  border: 20px solid rgba(170, 193, 201)
+}
+
+#button_jumps:hover{
+  color: rgba(170, 193, 201);
+  background-color: rgb(52, 77, 115);
+  border-radius: 30px;
+  border: 20px solid rgb(52, 77, 115)
+}

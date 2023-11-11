@@ -23,6 +23,8 @@
       <li class="nav-item"><a class="nav-link" id="edu" href="edu.html">EDU</a></li>
     </ul>
   </header> -->
+  <div id="container"></div>
+  <div id="cursor-trail"></div>
   <div id = "home">
   <main class="site-content wrapper content">
     <div class="header">
@@ -117,8 +119,11 @@
 
   </div>
 
+
   <div class="title">
     <hr size="1"><br>
+    <a href="static/resume.pdf" download="resume.pdf" target = "_blank" id = "button_jumps">🔽 Download resume</a>
+
     <h2>WORK EXPERIENCE</h2>
   </div>
 
@@ -340,7 +345,7 @@
   
   <br><main class="site-content wrapper content">
     <div class="intro"><a style="clear:left;float:left;margin-bottom:3px;margin-right:1px; margin-left: -20px"><img src="static/hack_club.png" width="240" style = "padding-right: 20px"></a>
-      <p id = 'hackathons'>I'm a super active hacktivist, having participated in upwards of 70 hackathons! I'm also part of <span class = "yellow"> Major League Hacking's Top 50 Hackers</span>. You can read more about my MLH bio <a href = "">here</a>. </p>
+      <p id = 'hackathons'>I'm a super active hacktivist, having participated in upwards of 70 hackathons! I'm also part of <span class = "yellow"> Major League Hacking's Top 50 Hackers</span>. You can read more about my MLH bio <a href = "https://top.mlh.io/2022/profiles/catherine-rasgaitis">here</a>. </p>
     
       <p style = "font-style: italic; font-size: 14px">Left is me presenting at Hack Club's Assemble hackathon in San Francisco, CA. I hosted a couple workshops (including one on data science), submitted my own project (dealing with ML and Marvel/DC Superheroes), and even had an act for the talent show!</p>
     
@@ -803,7 +808,7 @@
       function toggleCollapsible(sectionId) {
           const section = document.getElementById(sectionId);
           if (section) {
-              section.style.display = section.style.display === "none" ? "block" : "none";
+              section.style.display = section.style.display === "block" ? "none" : "block";
           }
       }
     
@@ -849,6 +854,18 @@
       });
     });
     
+
+    let cursorTrail = document.getElementById("cursor-trail");
+    document.addEventListener("mousemove", e => {
+      let trail = document.createElement("div");
+      trail.classList.add("trail");
+      cursorTrail.appendChild(trail);
+      trail.style.left = e.clientX - 330 + "px"; // - 330
+      trail.style.top = e.clientY - 50 + "px"; //
+      setTimeout(() => {
+        trail.remove();
+      }, 500);
+    });
     
   </script>
 

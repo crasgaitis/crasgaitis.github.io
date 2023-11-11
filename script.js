@@ -102,4 +102,3 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleSection(section2);
   });
 });
-
