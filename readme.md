@@ -3,6 +3,6 @@ In progress portfolio site
 ### Todos:
 * fix favicon
 * mouse trail
-* improve collapsable sections
+* improve collapsing sections
 * more content: rap lol
 * nav bar
