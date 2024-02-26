@@ -6,3 +6,4 @@ In progress portfolio site
 * improve collapsing sections
 * more content: rap lol
 * nav bar
+* research section (awards, posters)
