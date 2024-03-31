@@ -35,7 +35,7 @@
   </main>
   <main class="site-content wrapper content">
     <div class="intro"><a style="clear:right;float:right;margin-bottom:3px;margin-left:1px"><img src="static/linkedin_pic.jpg" width="210"></a>
-      <p>Hey there! My name is Catherine and I am a Computer Science major at the University of Washington, Seattle. My primary area of interest is artificial intelligence, although I'm also enthusiastic about neuroscience, space science, and robotics! I previously worked on applied reinforcement learning at NASA JPL, and I'm currently working on some other cool projects at UW's Orsborn Lab, Noble Lab, and Makeability Lab. This summer, I'm looking forward to interning at CSHL (Cold Spring Harbor Laboratory). </p>
+      <p>Hey there! My name is Catherine and I am a Computer Science major at the University of Washington, Seattle. My primary area of interest is artificial intelligence and computational biology. I'm also enthusiastic about neuroscience, space science, and robotics! I previously worked on applied reinforcement learning at NASA JPL, and I'm currently working on some other cool projects at UW's Orsborn Lab, Noble Lab, and Makeability Lab. This summer, I'm looking forward to interning at CSHL (Cold Spring Harbor Laboratory). </p>
 
       <p>In my free time, I also enjoy participating in hackathons, making short films, and writing! </p>
     </div>
@@ -167,7 +167,20 @@
           </li>
           </div>
 
-    
+      <div class="timeline-item">
+        <li class="timeline-item timeline-item-right"> <br/>
+          <span class = "spandate"> <em> June 2023 - August 2023 </em> </span>
+          <div class="timeline-content">
+            <img class="timeline-image" src="static/satellite-dish.png" alt="satellite dish icon">
+            <!-- <a href="https://www.flaticon.com/free-icons/radar" title="radar icons">Radar icons created by Freepik - Flaticon</a> -->
+            <h3 class="timeline-title">AI Intern @ NASA JPL</h3>
+            <p> Leveraged deep reinforcement learning methods to automate the scheduling of mission communications on the Deep Space Network. 
+              Missions are heavily constrained based on viewperiods, required equipment, antenna availability, "fairness" between competing 
+              missions, etc. with many special cases.</p>
+          </div>
+        </li>
+        </div>
+
       <div class="timeline-item">
       <li class="timeline-item timeline-item-right"> <br/>
         <span class = "spandate"> <em> March 2023 - October 2023 </em> </span>
@@ -178,20 +191,6 @@
           <p> Analyzed high-speed camera trap and GoPro footage of honeyeaters (birds) feeding at flowers, with the goal of determining
             whether honeyeaters were present in video frames, identifying honeyeater species, and counting the number of flowers probed per each bird's visit.
             Also worked on artificially augmenting datasets with randomized transformations and external data sources.</p>
-        </div>
-      </li>
-      </div>
-
-      <div class="timeline-item">
-      <li class="timeline-item timeline-item-right"> <br/>
-        <span class = "spandate"> <em> June 2023 - August 2023 </em> </span>
-        <div class="timeline-content">
-          <img class="timeline-image" src="static/satellite-dish.png" alt="satellite dish icon">
-          <!-- <a href="https://www.flaticon.com/free-icons/radar" title="radar icons">Radar icons created by Freepik - Flaticon</a> -->
-          <h3 class="timeline-title">AI Intern @ NASA JPL</h3>
-          <p> Leveraged deep reinforcement learning methods to automate the scheduling of mission communications on the Deep Space Network. 
-            Missions are heavily constrained based on viewperiods, required equipment, antenna availability, "fairness" between competing 
-            missions, etc. with many special cases.</p>
         </div>
       </li>
       </div>
@@ -227,7 +226,7 @@
   <div class = "edu-details">
     <p class = 'detail'> <span class = "emphasis">Scholarship Awards:</span> WA NASA Space Grant Scholar, Denice Dee Denton Scholarship in Computer Science & Engineering, David Almonte Memorial Scholarship, John & Mary Vukovich Scholarship</p>
     <p class = 'detail'> <span class = "emphasis">CSE Coursework:</span> 
-      CSE 311, 312: Foundations of Computing I, II; CSE 331: Software Design and Implementation; CSE 332: Data Structures and Parallelism; CSE 333: Systems Programming; CSE 351: Hardware/Software Interface; CSE 442: Data Visualization; CSE 446: Machine Learning; CSE 478: Autonomous Robotics; CSE 493: Deep Learning </p>
+      CSE 311, 312: Foundations of Computing I, II; CSE 331: Software Design and Implementation; CSE 332: Data Structures and Parallelism; CSE 333: Systems Programming; CSE 351: Hardware/Software Interface; CSE 442: Data Visualization; CSE 446: Machine Learning; CSE 478: Autonomous Robotics; CSE 493: Deep Learning; CSE 599: Machine Learning for Neuroscience </p>
           <p class = 'detail'> <span class = "emphasis">NEURO Coursework (intending to double major):</span> 
       BIOL 130: Introduction to Neuroscience; BIOL 180, 200, 220: Introductory Biology I, II, III; CHEM 220: Organic Chemistry</p>
   </div>
@@ -238,7 +237,7 @@
     <p>A <span class = "yellow">neurotechnology & neuroengineering club</span>! I put together weekly meetings, usually centered around a project tutorial I created. We work with lots of hardware,
       from Arduino kits, electroencephalograms, TENS devices, etc. Sometimes I also host journal-club style meetings, hackathons, or bring in guest speakers! </p>
 
-    <p>Synaptech also runs <span class = "yellow">quarter and year-long projects</span> that anyone can join. I'm leading the Opticars project (controlling Arduino cars with eye movements) and the Looking Glass project (modifying StyleGAN and analyzing eye movement when looking at familiar vs unfamiliar faces).
+    <p>Synaptech also runs <span class = "yellow">quarter and year-long projects</span> that anyone can join. I'm leading the Opticars project (controlling Arduino cars with eye movements) and the Looking Glass project (a novel research project about neural and ocular responses to different visual stimuli, to be published in IMPULSE).
       I'm also a part of the SmartMusic project, where we're working to generate original music compositions from a user's neural feedback! </p>
     </p>
 
@@ -698,10 +697,11 @@
       <h5>🚧 Opticars</h5>
       <p>Mini Arduino cars controlled by eye movements - including saccades to set directions and blinks to control stop/go actions.</p>
 
-		<li class="fancy-list-item">
+		<!-- <li class="fancy-list-item">
       <h5>🚧 LLM Tribes</h5>
       <p> This project was inspired by <a href = "https://wandb.ai/vincenttu/blog_posts/reports/A-Deep-Dive-into-LangChain-s-Generative-Agents--Vmlldzo1MzMwNjI3#the-paper">"Generative Agents: Interactive Simulacra of Human Behavior"</a>. In my LLM Tribes project, I am dividing up generative agents into "tribes", where each tribe has the same prompts as every other tribe, but they all use a unique LLM when generating actions or dialogue. Every tribe's goal is to take over the territory. I thought it would be interesting to compare the actions and 'aggression' of various models, and also look into problems with "cheating", like hallucinations or problems with memory.</p>
-    </li>
+    </li> -->
+
 		<li class="fancy-list-item">
       <h5>🚧 SmartMusic</h5>
       <p>This Synaptech group project aims to generate original music compositions based on neural feedback. First, a user trains their own ML model by listening to music they like and dislike, while wearing an EEG. As they start listening to more music, we can use their neural data and the features of the piece they are listening to, to iteratively improve the music, so that we eventually only output music that the listener enjoys. </p>
@@ -721,7 +721,7 @@
     <h2>FILM PORTFOLIO </h2>
   </div>
 
-  <p>Here are some of the short films that I've worked on! My favorite genre is horror, more psychological than gore-y stuff though. I really enjoy watching interrogation videos on YouTube and my favorite shows are Criminal Minds and The X-Files. Also a big fan of Agents of SHIELD! </p>
+  <p>Here are some of the short films that I've worked on! My favorite genre is horror, more psychological than gore though. </p>
   
   <div class = "film">
     <div class = "film-item">
@@ -767,7 +767,6 @@
     </div>
   </div>
 
-
   <div class="title">
     <hr size="1"><br>
     <h2>BLOG </h2>
@@ -775,7 +774,7 @@
   <br/>
   <main class="site-content wrapper content">
     <div class="intro"><a style="clear:left;float:left;margin-bottom:3px;margin-right:1px; margin-left: -20px"><img src="static/writing.jpg" width="220" style = "padding-right: 20px"></a>
-      <p>So, in addition to writing code or writing screenplays, I write for my own <a href = "https://crasgaitis.medium.com">Medium blog</a>. Lately, I've been self-publishing but I've also worked with publications like ILLUMINATION, The UX Collective's Bootcamp, Everyday Science, Newtonian Curiosity, etc.! </p>
+      <p>In addition to writing code or writing screenplays, I write for my own <a href = "https://crasgaitis.medium.com">Medium blog</a>. Lately, I've been self-publishing but I've also worked with publications like ILLUMINATION, The UX Collective's Bootcamp, Everyday Science, Newtonian Curiosity, etc.! </p>
       <p>I'm also a 2x "Top Writer" on Medium for the "Space" and "Innovation" topics.</p>
       <p>I also enjoy writing for the quarterly <a href = "https://www.smorescience.com/">Smore magazine</a>, which is a STEM magazine for kids! I mostly write on astronomy topics.</p>
     </div>
