@@ -811,3 +811,30 @@ a:hover{
   border-radius: 30px;
   border: 20px solid rgb(52, 77, 115)
 }
+
+.medium-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.medium-card {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 3px solid darkolivegreen;
+  background: black;
+}
+.medium-card img {
+  width: 100%;
+  display: block;
+}
+.medium-card h3 {
+  margin: 10px 12px 5px;
+  font-size: 25px;
+  line-height: 1.3;
+}
+.medium-card p {
+  margin: 0 12px 12px;
+  font-size: 18px;
+  color: #444;
+}
+
