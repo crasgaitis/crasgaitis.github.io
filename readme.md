@@ -19,7 +19,6 @@ An increasingly common (and frankly, flattering) question I've been getting rece
 * add symposia/conferences section
 * add outreach/volunteering events section
 * add other work section (museum of flight, contract writing, etc.)
-* add music section (?)
 * fix favicon
 * mouse trail
 * improve collapsing sections
