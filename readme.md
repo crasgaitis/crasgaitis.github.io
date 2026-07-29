@@ -24,3 +24,5 @@ An increasingly common (and frankly, flattering) question I've been getting rece
 * improve collapsing sections
 * nav bar
 
+### Misc notes
+* the color for icons is #E9FFEA

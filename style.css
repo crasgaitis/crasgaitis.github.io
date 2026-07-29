@@ -838,3 +838,16 @@ a:hover{
   color: #444;
 }
 
+.resume-title {
+  font-size: 20px;
+  color: rgb(122, 201, 218);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.resume-title-2 {
+  color: rgb(155, 205, 217);
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 15px;
+}
